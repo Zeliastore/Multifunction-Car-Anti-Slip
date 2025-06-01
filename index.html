@@ -3,460 +3,724 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multifunctional Mop Holder - Solusi Praktis Rumah Rapi</title>
-    <meta name="description" content="Gantungan sapu dan pel multifungsi dengan 6 hook dan 5 slot. Hemat tempat, tahan lama, mudah dipasang. Cocok untuk dapur, gudang, dan area cleaning.">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Multifunctional Mop Holder - Solusi Praktis Rumah Rapi">
-    <meta property="og:description" content="Gantungan sapu dan pel multifungsi dengan 6 hook dan 5 slot. Hemat tempat, tahan lama, mudah dipasang.">
-    <meta property="og:image" content="https://cdn.fastcdnshop.com/image/09cdaf7c7a4416827d8b4c7c72076168f9be5db5-700.jpeg">
-    <meta property="og:type" content="product">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <title>Spesial Hot Promo - Beli Satu Gratis Satu!</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
         }
-        
-        .gradient-bg {
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        
-        .floating-animation {
-            animation: floating 3s ease-in-out infinite;
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
         }
-        
-        @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+        .stats {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
         }
-        
-        .pulse-animation {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+        .stat {
+            text-align: center;
         }
-        
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
+
+        .stat-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffd700;
         }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .bounce-in {
-            animation: bounceIn 1s ease-out;
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="90" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            animation: float 20s ease-in-out infinite;
         }
-        
-        @keyframes bounceIn {
-            0% { transform: scale(0.3); opacity: 0; }
-            50% { transform: scale(1.05); }
-            70% { transform: scale(0.9); }
-            100% { transform: scale(1); opacity: 1; }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
         }
-        
-        .slide-in-left {
-            animation: slideInLeft 0.8s ease-out;
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInUp 1s ease-out;
         }
-        
-        @keyframes slideInLeft {
-            from { transform: translateX(-100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.3s both;
         }
-        
-        .slide-in-right {
-            animation: slideInRight 0.8s ease-out;
+
+        .countdown {
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+            animation: slideInUp 1s ease-out 0.6s both;
         }
-        
-        @keyframes slideInRight {
-            from { transform: translateX(100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+
+        .countdown h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
         }
-        
-        .testimonial-card {
-            transition: all 0.3s ease;
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        
-        .testimonial-card:hover {
-            transform: translateY(-10px);
+
+        .time-unit {
+            text-align: center;
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+
+        .time-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .time-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Product Gallery */
+        .gallery {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        
-        .feature-card {
-            transition: all 0.3s ease;
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
         }
-        
-        .feature-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+
+        .slide {
+            min-width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
-        
-        .price-banner {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            animation: priceGlow 2s ease-in-out infinite alternate;
-        }
-        
-        @keyframes priceGlow {
-            from { box-shadow: 0 0 20px rgba(255, 107, 107, 0.5); }
-            to { box-shadow: 0 0 30px rgba(255, 107, 107, 0.8); }
-        }
-        
-        .sticky-cta {
-            position: fixed;
+
+        .slide::after {
+            content: '';
+            position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.3));
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #f5576c;
+            transform: scale(1.2);
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .testimonial-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            opacity: 0.9;
+        }
+
+        /* Price Banner */
+        .price-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 999;
+        }
+
+        .price-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .price-info {
+            text-align: left;
+        }
+
+        .original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+
+        .current-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .savings {
+            background: #ff4757;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .cta-button {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            padding: 15px;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
-            transform: translateY(100px);
-            transition: transform 0.3s ease;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255,107,107,0.3);
+            animation: pulse 2s infinite;
         }
-        
-        .sticky-cta.visible {
-            transform: translateY(0);
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255,107,107,0.4);
         }
-        
-        @media (max-width: 768px) {
-            .hero-text h1 {
-                font-size: 2.5rem;
-                line-height: 1.2;
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
-        
-        .counter-animation {
-            animation: counterPulse 1.5s ease-in-out infinite;
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
-        
-        @keyframes counterPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 10px 20px rgba(255,107,107,0.3); }
+            50% { box-shadow: 0 15px 30px rgba(255,107,107,0.5); }
+            100% { box-shadow: 0 10px 20px rgba(255,107,107,0.3); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .countdown-timer {
+                gap: 10px;
+            }
+
+            .time-unit {
+                min-width: 60px;
+                padding: 10px;
+            }
+
+            .time-number {
+                font-size: 1.5rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .price-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .current-price {
+                font-size: 2.5rem;
+            }
+
+            .slide {
+                height: 300px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Hero Section -->
-    <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div class="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full floating-animation"></div>
-        <div class="absolute bottom-20 right-20 w-16 h-16 bg-white bg-opacity-10 rounded-full floating-animation" style="animation-delay: 1s;"></div>
-        <div class="absolute top-1/2 right-10 w-12 h-12 bg-white bg-opacity-10 rounded-full floating-animation" style="animation-delay: 2s;"></div>
-        
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <!-- Left Content -->
-                <div class="hero-text text-white slide-in-left">
-                    <div class="mb-6">
-                        <span class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold mb-4 bounce-in">🔥 PROMO TERBATAS!</span>
-                        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                            Rumah Rapi, <br>
-                            <span class="text-yellow-300">Hidup Lebih Teratur!</span>
-                        </h1>
-                        <p class="text-xl md:text-2xl mb-6 text-gray-200">
-                            Multifunctional Mop Holder - Solusi praktis untuk menyimpan sapu, pel, dan alat kebersihan lainnya dengan rapi dan mudah dijangkau.
-                        </p>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🚀 Premium Store</div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number" id="viewers">1,247</div>
+                        <div>Sedang Melihat</div>
                     </div>
-                    
-                    <!-- Dynamic Counters -->
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="text-center bg-white bg-opacity-20 backdrop-blur rounded-lg p-4 counter-animation">
-                            <div class="text-2xl md:text-3xl font-bold text-yellow-300" id="viewers">2,847</div>
-                            <div class="text-sm text-gray-200">Sedang Melihat</div>
-                        </div>
-                        <div class="text-center bg-white bg-opacity-20 backdrop-blur rounded-lg p-4 counter-animation">
-                            <div class="text-2xl md:text-3xl font-bold text-red-300" id="stock">23</div>
-                            <div class="text-sm text-gray-200">Stok Tersisa</div>
-                        </div>
+                    <div class="stat">
+                        <div class="stat-number" id="stock">23</div>
+                        <div>Stok Tersisa</div>
                     </div>
-                    
-                    <!-- Countdown Timer -->
-                    <div class="bg-red-600 rounded-lg p-4 mb-6 text-center">
-                        <p class="text-sm mb-2">⏰ PROMO BERAKHIR DALAM:</p>
-                        <div class="flex justify-center space-x-4 text-2xl font-bold" id="countdown">
-                            <div><span id="hours">12</span><small class="block text-xs">JAM</small></div>
-                            <div>:</div>
-                            <div><span id="minutes">34</span><small class="block text-xs">MENIT</small></div>
-                            <div>:</div>
-                            <div><span id="seconds">56</span><small class="block text-xs">DETIK</small></div>
-                        </div>
-                    </div>
-                    
-                    <!-- CTA Button -->
-                    <a href="https://nava.orderonline.id/checkout-multifunctional-mop-holder-with-hook" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 pulse-animation">
-                        PESAN SEKARANG - GRATIS ONGKIR!
-                    </a>
                 </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🔥 SPESIAL HOT PROMO 🔥</h1>
+                <p>BELI SATU GRATIS SATU - Penawaran Terbatas!</p>
                 
-                <!-- Right Content - Product Image -->
-                <div class="text-center slide-in-right">
-                    <img src="https://cdn.fastcdnshop.com/image/09cdaf7c7a4416827d8b4c7c72076168f9be5db5-700.jpeg" 
-                         alt="Multifunctional Mop Holder" 
-                         class="w-full max-w-md mx-auto floating-animation rounded-2xl shadow-2xl">
+                <div class="countdown">
+                    <h3>⏰ Promo Berakhir Dalam:</h3>
+                    <div class="countdown-timer">
+                        <div class="time-unit">
+                            <span class="time-number" id="hours">23</span>
+                            <span class="time-label">JAM</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="minutes">45</span>
+                            <span class="time-label">MENIT</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="seconds">30</span>
+                            <span class="time-label">DETIK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Produk Premium Terbaik</h2>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide" style="background-image: url('https://down-id.img.susercontent.com/file/id-11134207-7r98p-lzymk0b2atk01a.webp')"></div>
+                    <div class="slide" style="background-image: url('https://cdn.fastcdnshop.com/image/bda681d66d037c84086ccd980afa52d719e7a000.gif')"></div>
+                    <div class="slide" style="background-image: url('https://down-id.img.susercontent.com/file/id-11134207-7r98p-lzymk0b20z6004.webp')"></div>
+                    <div class="slide" style="background-image: url('https://cdn.fastcdnshop.com/image/3a8afe0a4317c4a26cbade512749237f88dfea03.jpeg')"></div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Fitur Unggulan Produk</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Kualitas Premium</h3>
+                    <p>Dibuat dengan material berkualitas tinggi dan standar internasional untuk memberikan pengalaman terbaik bagi pengguna.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Garansi Resmi</h3>
+                    <p>Dilengkapi dengan garansi resmi dan layanan purna jual yang terpercaya untuk memberikan ketenangan pikiran.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Mudah Digunakan</h3>
+                    <p>Desain yang user-friendly dan mudah dipahami, cocok untuk semua kalangan usia dengan panduan lengkap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Produk ini benar-benar mengubah hidup saya! Kualitasnya luar biasa dan sesuai dengan ekspektasi. Highly recommended!"</p>
+                    <div class="testimonial-author">- Andi Prasetyo, Jakarta</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Pelayanan sangat memuaskan, pengiriman cepat, dan produknya original. Pasti akan order lagi di sini!"</p>
+                    <div class="testimonial-author">- Sari Indah, Surabaya</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Sudah 6 bulan pakai dan masih awet! Worth every penny. Terima kasih atas produk berkualitasnya."</p>
+                    <div class="testimonial-author">- Budi Santoso, Bandung</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Promo beli 1 gratis 1 ini sangat menguntungkan! Dapat 2 produk dengan kualitas yang sama bagusnya."</p>
+                    <div class="testimonial-author">- Lisa Wati, Medan</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Price Banner -->
-    <div class="price-banner text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">⚡ HARGA SPESIAL HARI INI! ⚡</h2>
-            <div class="flex justify-center items-center space-x-6">
-                <div class="text-center">
-                    <div class="text-gray-300 line-through text-xl">Rp 262.500</div>
-                    <div class="text-4xl md:text-5xl font-bold text-yellow-300">Rp 175.000</div>
-                    <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold inline-block mt-2">
-                        HEMAT 49%!
-                    </div>
+    <section class="price-banner">
+        <div class="container">
+            <div class="price-content">
+                <div class="price-info">
+                    <div class="original-price">Rp 268.199</div>
+                    <div class="current-price">Rp 179.999</div>
+                    <div class="savings">HEMAT 33%</div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Product Description -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Mengapa Memilih Multifunctional Mop Holder?</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Dirancang khusus untuk kebutuhan rumah tangga modern, produk ini menggabungkan fungsi penyimpanan yang praktis dengan desain yang elegan. Terbuat dari material berkualitas tinggi yang tahan lama dan mudah dipasang tanpa perlu bor dinding.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8 slide-in-left">
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-100 p-3 rounded-full">
-                            <i class="fas fa-home text-blue-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Hemat Ruang Maksimal</h3>
-                            <p class="text-gray-600">Dengan 6 hook dan 5 slot penyimpanan, Anda bisa menyimpan berbagai alat kebersihan dalam satu tempat yang kompak dan terorganisir.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-green-100 p-3 rounded-full">
-                            <i class="fas fa-tools text-green-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Mudah Dipasang</h3>
-                            <p class="text-gray-600">Sistem pemasangan tanpa bor dengan lem kuat 3M. Cukup tempel di dinding yang bersih dan kering, siap digunakan dalam hitungan menit!</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-purple-100 p-3 rounded-full">
-                            <i class="fas fa-shield-alt text-purple-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Material Premium</h3>
-                            <p class="text-gray-600">Terbuat dari plastik ABS berkualitas tinggi yang tahan air, anti karat, dan mampu menahan beban hingga 15kg dengan aman.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="slide-in-right">
-                    <img src="https://cdn.fastcdnshop.com/image/e151475271efeb413ce032d5df1cd9f414964f26.gif" 
-                         alt="Cara Penggunaan Mop Holder" 
-                         class="w-full rounded-2xl shadow-xl">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Fitur Unggulan Yang Akan Anda Dapatkan</h2>
-                <p class="text-xl text-gray-600">Setiap detail dirancang untuk memberikan kemudahan maksimal dalam kehidupan sehari-hari</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="feature-card bg-white p-8 rounded-xl shadow-lg text-center">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-grip-horizontal text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">6 Hook Serbaguna</h3>
-                    <p class="text-gray-600">Hook yang kuat untuk menggantung sapu, pel, sikat, dan alat kebersihan lainnya. Masing-masing hook dapat menahan beban hingga 2kg.</p>
-                </div>
-                
-                <div class="feature-card bg-white p-8 rounded-xl shadow-lg text-center">
-                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-th-large text-green-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">5 Slot Penyimpanan</h3>
-                    <p class="text-gray-600">Slot khusus untuk menyimpan gagang sapu dan pel dengan rapi. Desain slot yang presisi mencegah alat jatuh atau bergeser.</p>
-                </div>
-                
-                <div class="feature-card bg-white p-8 rounded-xl shadow-lg text-center">
-                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-magic text-purple-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Pemasangan Ajaib</h3>
-                    <p class="text-gray-600">Tanpa perlu bor atau paku! Sistem adhesive 3M yang super kuat memungkinkan pemasangan instan tanpa merusak dinding.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to Use -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Cara Penggunaan Super Mudah</h2>
-                <p class="text-xl text-gray-600">Hanya 3 langkah sederhana untuk rumah yang lebih rapi!</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold">1</div>
-                    <h3 class="text-xl font-semibold mb-4">Bersihkan Dinding</h3>
-                    <p class="text-gray-600">Pastikan permukaan dinding bersih, kering, dan rata. Hindari dinding yang bercat kusam atau bertekstur kasar.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold">2</div>
-                    <h3 class="text-xl font-semibold mb-4">Tempel & Tekan</h3>
-                    <p class="text-gray-600">Lepas pelindung adhesive dan tempel holder ke dinding. Tekan kuat-kuat selama 30 detik untuk hasil maksimal.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold">3</div>
-                    <h3 class="text-xl font-semibold mb-4">Siap Digunakan!</h3>
-                    <p class="text-gray-600">Tunggu 1 jam agar adhesive menempel sempurna, lalu mulai rapikan alat kebersihan Anda dengan praktis!</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <img src="https://cdn.fastcdnshop.com/image/512cf98eeb7f0178c5d44d45a2321b4c11219464.webp" 
-                     alt="Installed Mop Holder" 
-                     class="w-full max-w-2xl mx-auto rounded-2xl shadow-xl">
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Apa Kata Pelanggan Kami?</h2>
-                <p class="text-xl text-gray-600">Ribuan keluarga Indonesia sudah merasakan manfaatnya!</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612c4d8?w=60&h=60&fit=crop&crop=face" alt="Sarah" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold">Ibu Sarah</h4>
-                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"Luar biasa! Sekarang dapur saya jauh lebih rapi. Sapu dan pel tidak berserakan lagi di sudut ruangan. Pemasangannya mudah banget, cuma 5 menit sudah selesai!"</p>
-                </div>
-                
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Budi" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold">Pak Budi</h4>
-                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"Kualitasnya premium, tidak seperti yang biasa dijual di toko. Sudah 6 bulan pakai masih kuat dan tidak kendor. Worth it banget dengan harganya!"</p>
-                </div>
-                
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Maya" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold">Ibu Maya</h4>
-                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"Sempurna untuk apartemen kecil seperti punya saya. Menghemat space banget dan tampilan jadi lebih elegan. Sudah recommend ke teman-teman!"</p>
-                </div>
-                
-                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Andi" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold">Pak Andi</h4>
-                            <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">"Istri saya sangat senang dengan produk ini. Gudang di belakang rumah jadi lebih teratur. Pelayanan penjualnya juga ramah dan pengiriman cepat!"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgency Section -->
-    <section class="py-16 bg-red-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl font-bold mb-6">⚠️ JANGAN SAMPAI TERLEWAT! ⚠️</h2>
-                <div class="grid md:grid-cols-3 gap-8 mb-8">
-                    <div class="bg-white bg-opacity-20 p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-yellow-300 mb-2">🔥</div>
-                        <h3 class="text-xl font-semibold mb-2">Stok Terbatas</h3>
-                        <p>Hanya tersisa <span class="font-bold text-yellow-300">23 unit</span> untuk batch terakhir bulan ini!</p>
-                    </div>
-                    
-                    <div class="bg-white bg-opacity-20 p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-yellow-300 mb-2">⏰</div>
-                        <h3 class="text-xl font-semibold mb-2">Promo Berakhir</h3>
-                        <p>Harga spesial ini hanya berlaku sampai <span class="font-bold text-yellow-300">akhir hari ini</span>!</p>
-                    </div>
-                    
-                    <div class="bg-white bg-opacity-20 p-6 rounded-xl">
-                        <div class="text-3xl font-bold text-yellow-300 mb-2">📦</div>
-                        <h3 class="text-xl font-semibold mb-2">Gratis Ongkir</h3>
-                        <p>Pengiriman <span class="font-bold text-yellow-300">GRATIS</span> ke seluruh Indonesia untuk 100 pembeli pertama!</p>
-                    </div>
-                </div>
-                
-                <div class="bg-yellow-400 text-black p-6 rounded-xl mb-8">
-                    <h3 class="text-2xl font-bold mb-4">🎁 BONUS EKSKLUSIF HARI INI!</h3>
-                    <ul class="text-left max-w-2xl mx-auto space-y-2">
-                        <li>✅ Garansi 1 Tahun Penuh</li>
-                        <li>✅ Panduan Pemasangan Bergambar</li>
-                        <li>✅ Customer Support 24/7</li>
-                        <li>✅ Gratis Konsultasi Tatanan Rumah</li>
-                    </ul>
-                </div>
-                
-                 <a href="https://nava.orderonline.id/checkout-multifunctional-mop-holder-with-hook" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 pulse-animation">
-                    PESAN SEKARANG - STOCK TERBATAS!
+                <a href="https://nava.orderonline.id/checkout-multifunction-car-anti-slip" class="cta-button" target="_blank">
+                    🛒 AMBIL PROMO SEKARANG JUGA!
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Product Gallery -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">Lihat Produk Dari Berbagai Angle</h2>
-            </div>
+    <script>
+        // Auto Slider
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+        let autoSlideInterval;
+
+        function updateSlider() {
+            const slider = document.getElementById('slider');
+            slider.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
             
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function currentSlide(n) {
+            currentSlideIndex = n - 1;
+            updateSlider();
+            resetAutoSlide();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 3000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Start auto slide
+        startAutoSlide();
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            const distance = tomorrow.getTime() - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Dynamic Counters
+        function updateStats() {
+            const viewers = document.getElementById('viewers');
+            const stock = document.getElementById('stock');
+            
+            const baseViewers = 1247;
+            const baseStock = 23;
+            
+            const viewerVariation = Math.floor(Math.random() * 20) - 10;
+            const stockVariation = Math.floor(Math.random() * 3) - 1;
+            
+            const newViewers = Math.max(1200, baseViewers + viewerVariation);
+            const newStock = Math.max(15, Math.min(30, baseStock + stockVariation));
+            
+            viewers.textContent = newViewers.toLocaleString();
+            stock.textContent = newStock;
+        }
+
+        setInterval(updateStats, 5000);
+
+        // Smooth scrolling for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('click', function(e) {
+                // Add click analytics or tracking here if needed
+                console.log('CTA button clicked');
+            });
+        });
+
+        // Add scroll animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.feature-card, .testimonial');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.feature-card, .testimonial');
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Check initial state
+        });
+    </script>
+</body>
+</html>
